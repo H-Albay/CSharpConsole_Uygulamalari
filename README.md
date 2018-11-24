@@ -1,2 +1,1 @@
 # CSharpUygulamalar-II
-deneme
