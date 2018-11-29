@@ -1,1 +1,1 @@
-# C# CONSOLE UYGULAMALAR
+# C# Console Uygulamaları
