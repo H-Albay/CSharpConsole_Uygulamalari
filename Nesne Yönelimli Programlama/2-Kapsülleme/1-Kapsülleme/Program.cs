@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace _2_Kapsülleme
 {
     /*  Kapsülleme nedir?
-     * içeride saklamış olduğumuz private fieldın önüne koymuş olduğumuz bir property sayesinde get ve set bloklarını atıyarak değer atamasıdır.
+     * içeride saklamış olduğumuz private fieldın önüne koymuş olduğumuz bir property sayesinde get ve set bloklarını kullanarak değer ataması yapabiliriz yada çekebiliriz.
      */
 
     class Program
