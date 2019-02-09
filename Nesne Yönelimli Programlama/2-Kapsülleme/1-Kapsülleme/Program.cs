@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace _2_Kapsülleme
 {
+    /*  Kapsülleme nedir?
+     * içeride saklamış olduğumuz private fieldın önüne koymuş olduğumuz bir property sayesinde get ve set bloklarını atıyarak değer atamasıdır.
+     */
+
     class Program
     {
         static void Main(string[] args)
         {
-            Musteri M=new Musteri();
+            Musteri M = new Musteri();
             M._isim = "Hakan";
             M._soyisim = "Albay";
             M._musterino = 1;
@@ -19,7 +23,7 @@ namespace _2_Kapsülleme
             M.EkranaYaz();
             Console.ReadKey();
         }
-        
+
     }
 
     class Musteri
@@ -32,7 +36,7 @@ namespace _2_Kapsülleme
 
         public Musteri()
         {
-            MusteriID=Guid.NewGuid();
+            MusteriID = Guid.NewGuid();
 
         }
         //Kapsülleme
@@ -43,13 +47,13 @@ namespace _2_Kapsülleme
 
         public int _musterino
         {
-            get { return MusteriNo;}
+            get { return MusteriNo; }
             set { this.MusteriNo = value; }
         }
 
         public string _isim
         {
-            get { return Isim;}
+            get { return Isim; }
             set { this.Isim = value; }
         }
 
@@ -61,9 +65,10 @@ namespace _2_Kapsülleme
 
         public string _tckimlikno
         {
-            get { return "***"+this.TCKimlikNo.Substring(3);}
-            set {
-                if (value.Length==11)
+            get { return "***" + this.TCKimlikNo.Substring(3); }
+            set
+            {
+                if (value.Length == 11)
                 {
                     this.TCKimlikNo = value;
                 }
@@ -75,7 +80,7 @@ namespace _2_Kapsülleme
         }
         public void EkranaYaz()
         {
-            Console.WriteLine("{0} -> {1} -> {2} -> {3}->{4}", this._musterino, this._isim, this._soyisim, this._tckimlikno,this._musteriid);
+            Console.WriteLine("{0} -> {1} -> {2} -> {3}->{4}", this._musterino, this._isim, this._soyisim, this._tckimlikno, this._musteriid);
         }
 
     }
