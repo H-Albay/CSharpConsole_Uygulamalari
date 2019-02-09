@@ -8,6 +8,15 @@ namespace _2_Kapsulleme.Uyg_I
 {
     class Program
     {
+        /*  KAPSÜLLEME ÖRNEK
+             -ogrenci sınıfının içerisinde _ogrno bir private field tanımı yapalım.
+             Set-> 
+             -Girilen değer 8 haneli olmalıdır.
+             -Girilen değer içerisindeki tüm değerler sayısal değer olmak zorundadır.
+             Get->
+             -Öncelikle değer okunamaz şekilde ayarlansın
+             -ilk 5 hanesini gösterelim.
+        */
         static void Main(string[] args)
         {
             ogrenci o1 = new ogrenci();
